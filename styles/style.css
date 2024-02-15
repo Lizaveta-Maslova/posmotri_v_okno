@@ -13,9 +13,11 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -41,7 +43,6 @@ ol {
   display: flex;
   align-items: end;
   width: 1140px;
-  padding-top: 133px;
 }
 
 .search-form {
@@ -52,7 +53,6 @@ ol {
 
 .result {
   margin-right: 28px;
-  margin-top: 78px;
 }
 
 .content__list {
@@ -68,7 +68,7 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
+  inline-size: 711px;
   height: 386px;
   margin-bottom: 16px;
   position: relative;
@@ -105,7 +105,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -119,7 +119,6 @@ ol {
   text-transform: uppercase;
   margin-bottom: 18px;
   width: 260px;
-  height: 210px;
 }
 
 .content__accent {
@@ -128,7 +127,17 @@ ol {
 
 .content__card-link {
   text-decoration: none;
-  color: inherit;
+  color: white;
+  display: block;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid white;
+  margin: 2px;
 }
 
 .content__video-card-title {
@@ -142,7 +151,7 @@ ol {
 
 .content__video-card-description {
   color: rgb(255, 255, 255);
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -153,7 +162,7 @@ ol {
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
-  clip: rect (0 0 0 0);
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
 }
@@ -172,7 +181,7 @@ ol {
   border: none;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -180,6 +189,7 @@ ol {
   background-color: transparent;
   width: 225px;
   height: 27px;
+  color: white;
 }
 
 .search-form__checkbox {
@@ -199,24 +209,23 @@ ol {
 .button {
   cursor: pointer;
   appearance: none;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
   color: white;
   background-color: transparent;
   border: 1px solid white;
+  min-height: 34px;
 }
 
 .search-form__submit-button {
   align-self: end;
   width: 194px;
-  height: 34px;
 }
 
 .more-button {
   width: 399px;
-  height: 34px;
 }
 
 .search-form__pseudo-checkbox {
@@ -230,15 +239,10 @@ ol {
   outline: none;
 }
 
-.search-form__label:focus-visible {
-  background-color: 1px solid white;
-}
-
-.search-form__pseudo-checkbox:active {
-  display: inline-block;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox:active {
+  content: "";
   width: 15px;
   height: 15px;
-  border: 1px solid black;
   background-color: white;
 }
 
@@ -253,27 +257,17 @@ ol {
   outline: none;
 }
 
+.button:active {
+  background-color: rgb(84, 80, 80);
+}
+
 .search-form__textfield:active {
   border-right: 1px solid white;
   border-left: 1px solid white;
 }
 
-.search-form__submit-button:active {
-  background-color: rgb(84, 80, 80);
-}
-
-.content__list-item:active {
-  background-color: rgb(84, 80, 80);
-}
-
-.content__video-card-description:hover {
+.content__card-link:hover {
   text-decoration: underline;
-}
-
-.more-button:focus {
-  outline: 1px solid white;
-  width: 398px;
-  height: 107px;
 }
 
 .search-form__submit-button:focus {
@@ -282,14 +276,14 @@ ol {
   height: 38px;
 }
 
-.search-form__textfield:focus {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid white;
 }
 
-.search-form__label:focus {
+.button:focus-visible {
   outline: 1px solid white;
 }
 
-.content__list-item:focus {
-  outline: 1px solid white;
+.content__card-link_current {
+  background-color: rgb(84, 80, 80);
 }
