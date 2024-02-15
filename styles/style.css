@@ -67,7 +67,6 @@ ol {
   height: 100%;
 }
 
-/* ----------------2 шаг------------- */
 .result__video-container {
   width: 711px;
   height: 386px;
@@ -105,7 +104,6 @@ ol {
   height: 100%;
 }
 
-/* ---------------3 шаг------------------------ */
 .search-form__fieldset-title {
   font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
@@ -150,7 +148,6 @@ ol {
   line-height: 16.2px;
 }
 
-/* ____________________________5 шаг______________________________________ */
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -170,7 +167,6 @@ ol {
   cursor: pointer;
 }
 
-/* текстовое поле у формы город */
 .search-form__textfield {
   appearance: none;
   border: none;
@@ -186,7 +182,6 @@ ol {
   height: 27px;
 }
 
-/* чекбоксы */
 .search-form__checkbox {
   appearance: none;
 }
@@ -231,7 +226,6 @@ ol {
   border: 1px solid white;
 }
 
-/* ---------------------------------6 шаг---------------------------------- */
 .search-form__textfield:focus {
   outline: none;
 }
