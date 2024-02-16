@@ -110,6 +110,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  padding-bottom: 5px;
 }
 
 .title {
@@ -148,6 +149,7 @@ ol {
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
+  padding-bottom: 6px;
 }
 
 .content__video-card-description {
