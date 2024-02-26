@@ -232,10 +232,13 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid white;
+  display: inline-block;
 }
 
 .search-form__textfield:focus {
@@ -271,11 +274,6 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-}
-
-.search-form__submit-button:focus {
-  width: 198px;
-  height: 38px;
 }
 
 .search-form__label:has(:focus-visible) {
