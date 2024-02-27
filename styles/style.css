@@ -199,12 +199,6 @@ ol {
   color: white;
 }
 
-.search-form__checkbox-list {
-  display: flex;
-  cursor: pointer;
-  gap: 16px;
-}
-
 .search-form__fieldset {
   border: none;
 }
@@ -231,10 +225,13 @@ ol {
   width: 399px;
 }
 
-.search-form__pseudo-checkbox {
+.search-form__checkbox-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
   border: 1px solid white;
@@ -250,6 +247,8 @@ ol {
   width: 15px;
   height: 15px;
   background-color: white;
+  display: block;
+  margin: auto;
 }
 
 .search-form__label:hover {
