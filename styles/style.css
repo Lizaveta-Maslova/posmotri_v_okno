@@ -181,6 +181,8 @@ ol {
 .search-form__label {
   width: fit-content;
   cursor: pointer;
+  display: flex;
+  gap: 5px;
 }
 
 .search-form__textfield {
@@ -235,7 +237,6 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid white;
-  display: inline-block;
 }
 
 .search-form__textfield:focus {
